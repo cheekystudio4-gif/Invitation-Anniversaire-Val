@@ -1,0 +1,393 @@
+
+body{
+    margin: 0%;
+    padding: 0%;
+
+    background-image: url("img/IMG_FlowerBC.png");
+    background-size: 75%;
+    height: 100%;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#app {
+  margin-top: 8%;
+  width: 390px;
+  height: 844px; /* ratio iPhone 14 */
+  overflow-y: auto;
+  overflow-x: hidden;
+  position: relative;
+  background-color: var(--Fond);
+  box-shadow: var(--OmbreInset001);
+  border-radius: 15px;
+
+}
+
+:root {
+    --RoseMid: #E79897;
+    --RoseSombr:#8e5453;
+    --TEMPImg: #C6C09C;
+    --Fond: #f6f0e0;
+    --Texte:  #f7f5ee;
+
+    /*--RoseMid: #767676;
+    --RoseSombr:#959595;
+    --TEMPImg: #c2c2c2;
+    --Fond: #ffffff;*/
+
+    --Ombre001: 1px 3px 8px rgba(0, 0, 0, 0.402);
+    --OmbreInset001 :inset 0px 3px 12px rgba(0, 0, 0, 0.402);
+
+    --OmbreIMG: 1px 3px 6px rgba(0, 0, 0, 0.402);
+    --OmbreTxt:  1px 1px 1px #ffffff7e, -1px -1px 1px #33333378;
+    
+}
+
+.IMG_Div{
+
+    position: absolute;
+    /*background-color: var(--TEMPImg);*/
+    filter:drop-shadow(var(--OmbreIMG));
+}
+
+
+@keyframes slideFromLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+/*#region Acceuil*/
+#IMG_Fleur_001{
+    aspect-ratio: 1 / 1;
+    width:80%;
+    top:-5%;
+    left:-10%;
+
+    background-image: url("img/IMG_Fleur_001.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: slideFromLeft 1.6s ease-out forwards;
+    animation-delay: 0.3s;
+    opacity: 0;
+  
+}
+
+#IMG_Etoile_001{
+    aspect-ratio: 1 / 1;
+    width:20%;
+    top:20%;
+    right:10%;
+
+    background-image: url("img/IMG_PinkStar_001.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: slideFromRight 1s ease-out forwards;
+    animation-delay: 0.8s;
+    opacity: 0;
+}
+
+#IMG_Val_001{
+    aspect-ratio: 1 / 1;
+    width:60%;
+    top:40%;
+    right:20%;
+
+    background-image: url("img/IMG_Principale_Val_001.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: slideFromLeft 0.5s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+#IMG_50Ballon_001{
+    width:45%;
+    height:20% ;
+    top:58%;
+    right:27.5%;
+
+    background-image: url("img/IMG_Ballons_50.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: slideFromRight 0.5s ease-out forwards;
+    animation-delay: 0.15s;
+    opacity: 0;
+}
+
+#IMG_Birthday_001{
+    width:50%;
+    height:8%;
+    top:72%;
+    right:25%;
+
+    background-image: url("img/IMG_BirthdayLetters_001.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    animation: slideFromLeft 0.5s ease-out forwards;
+    animation-delay: 0.25s;
+    opacity: 0;
+}
+/*#endregion Acceuil*/
+
+/*#region Info*/
+#Container_Infos_001{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    background-color: var(--RoseMid);
+
+    width:85%;
+    height:100%;
+    top: 90%;
+    left: 7.5%;
+    border-radius:30px;
+
+    text-align: center;
+   box-shadow: var(--OmbreInset001);
+}
+
+.Info_Title{
+    margin: 10%;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--Texte);
+    font-size: 250%;
+    font-weight: 600;
+
+/*text-shadow: 1px 1px 1px #fff, -1px -1px 1px #555;*/
+text-shadow: var(--OmbreTxt);
+
+    
+}
+
+
+.Info_picto001{
+    margin: auto;
+    position: relative;
+    width:30%;
+    aspect-ratio: 1 / 1;
+
+    background-image: url("img/IMG_PictoCalendar.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Info_picto002{
+    margin: auto;
+    position: relative;
+    width:30%;
+    aspect-ratio: 1 / 1;
+
+    background-image: url("img/IMG_PictoPlace.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.Info_textContainer{
+    margin: auto;
+    padding: 5%;
+    margin-top: 5vh;
+    width:70%;
+    
+    background-color: var(--RoseSombr);
+    border-radius:30px;   
+
+    box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.732);
+}
+.Info_textContainer h2{
+    margin: auto;
+    font-family:'Poppins',sans-serif;
+    color: var(--Texte);
+    font-size: 125%;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.Info_textContainer p{
+    margin: auto;
+    font-family:'Poppins',sans-serif;
+    color: var(--Texte);
+    font-size: 100%;
+    font-weight: 300;
+}
+/*#endregion Info*/
+
+/*#region Enfants*/
+#Container_Enfant{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    background-color: var(--RoseMid);
+    width:85%;
+    
+    top: 200%;
+    left: 7.5%;
+    border-radius:30px;
+    text-align: center;
+    box-shadow: var(--OmbreInset001);
+}
+
+#Container_Enfant p{
+    margin: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--Texte);
+    font-size: 150%;
+    font-weight: 600;
+    text-shadow: var(--OmbreTxt);
+    text-transform: uppercase;
+}
+/*#endregion Enfants*/
+
+/*#region DressCode*/
+#Container_DressCode{
+    margin: 0%;
+    padding: 0%;
+    position: absolute;
+    width:85%;
+    height: 30%;
+    
+    top: 230%;
+    left: 7.5%;
+
+}
+
+#IMG_DressCode{
+    float: left;
+    width: 50%;
+    height: 100%;
+    border-radius:30px;
+
+    background-image: url("img/IMG_DressCode_001.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+#TXT_DressCode{
+    float: right;
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+#Title_DressCode{
+    margin: 5%;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--RoseMid);
+    font-size: 250%;
+    font-weight: 600;
+    text-shadow: var(--OmbreTxt);
+}
+
+#Info_DressCode{
+    margin: 5%;
+    font-family:'Poppins',sans-serif;
+    color: var(--RoseSombr);
+    font-size: 100%;
+    font-weight: 300;
+}
+
+#IMG_Star{
+    position: relative;
+    margin-top: 10%;
+    width: 40%;
+    left:30%;
+    aspect-ratio: 1 / 1;
+
+    background-image: url("img/IMG_Fleur_001.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    filter:drop-shadow(var(--OmbreIMG));
+}
+/*#endregion DressCode*/
+
+/*#region Inscription*/
+#Container_Inscription{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0%;
+    position: absolute;
+    width:85%;
+    height: 30%;  
+    top: 270%;
+    left: 7.5%;
+    text-align: center;
+}
+
+#Inscr_Title{
+    margin: 1%;
+    font-family: 'Times New Roman', Times, serif;
+    color: var(--RoseMid);
+    font-size: 250%;
+    font-weight: 600;
+    text-shadow: var(--OmbreTxt);
+}
+
+#Inscr_Message{
+    margin-top: 1%;
+    font-family:'Poppins',sans-serif;
+    color: var(--RoseSombr);
+    font-size: 100%;
+    font-weight: 300;
+}
+
+#Inscr_Button {
+background-color: var(--RoseMid);
+border: none;
+color: white;
+padding: 3% 20%;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+border-radius:30px;
+
+font-family:'Poppins',sans-serif;
+font-size: 150%;
+font-weight: 300;
+box-shadow: var(--Ombre001);
+}
+
+
+
+#Inscr_Button:active{
+  transform: scale(0.80) translateY(2px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#Inscr_Button:hover{
+  transform: scale(0.80) translateY(2px);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+#Inscr_Remerciements{
+    margin: 10%;
+    font-family:'Poppins',sans-serif;
+    color: var(--RoseSombr);
+    font-size: 100%;
+    font-weight: 300;
+}
+/*#endregion DressCode*/
+
