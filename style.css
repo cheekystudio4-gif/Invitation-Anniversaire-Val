@@ -160,7 +160,7 @@ body{
     background-color: var(--RoseMid);
 
     width:85%;
-    height:100%;
+    height:65%;
     top: 90%;
     left: 7.5%;
     border-radius:30px;
@@ -170,10 +170,10 @@ body{
 }
 
 .Info_Title{
-    margin: 10%;
+    margin-top: 5%;
     font-family: 'Times New Roman', Times, serif;
     color: var(--Texte);
-    font-size: 250%;
+    font-size: 200%;
     font-weight: 600;
 
 /*text-shadow: 1px 1px 1px #fff, -1px -1px 1px #555;*/
@@ -186,7 +186,7 @@ text-shadow: var(--OmbreTxt);
 .Info_picto001{
     margin: auto;
     position: relative;
-    width:30%;
+    width:25%;
     aspect-ratio: 1 / 1;
 
     background-image: url("img/IMG_PictoCalendar.png");
@@ -197,7 +197,7 @@ text-shadow: var(--OmbreTxt);
 .Info_picto002{
     margin: auto;
     position: relative;
-    width:30%;
+    width:25%;
     aspect-ratio: 1 / 1;
 
     background-image: url("img/IMG_PictoPlace.png");
@@ -208,7 +208,7 @@ text-shadow: var(--OmbreTxt);
 .Info_textContainer{
     margin: auto;
     padding: 5%;
-    margin-top: 5vh;
+    margin-top: 2vh;
     width:70%;
     
     background-color: var(--RoseSombr);
@@ -216,11 +216,30 @@ text-shadow: var(--OmbreTxt);
 
     box-shadow: 1px 3px 6px rgba(0, 0, 0, 0.732);
 }
+
+.Info_textContainer_Map{
+background-color: var(--RoseSombr);
+border: none;
+color: var(--Texte);
+padding: 3%;
+text-align: center;
+text-decoration: none;
+display: inline-block;
+cursor: pointer;
+border-radius:30px;
+margin-top: 3vh;
+
+font-family:'Poppins',sans-serif;
+font-size: 80%;
+font-weight: 600;
+box-shadow: var(--Ombre001);
+}
+
 .Info_textContainer h2{
     margin: auto;
     font-family:'Poppins',sans-serif;
     color: var(--Texte);
-    font-size: 125%;
+    font-size: 100%;
     font-weight: 600;
     text-transform: uppercase;
 }
@@ -229,7 +248,7 @@ text-shadow: var(--OmbreTxt);
     margin: auto;
     font-family:'Poppins',sans-serif;
     color: var(--Texte);
-    font-size: 100%;
+    font-size: 90%;
     font-weight: 300;
 }
 /*#endregion Info*/
@@ -242,7 +261,7 @@ text-shadow: var(--OmbreTxt);
     background-color: var(--RoseMid);
     width:85%;
     
-    top: 200%;
+    top: 160%;
     left: 7.5%;
     border-radius:30px;
     text-align: center;
@@ -268,7 +287,7 @@ text-shadow: var(--OmbreTxt);
     width:85%;
     height: 30%;
     
-    top: 230%;
+    top: 190%;
     left: 7.5%;
 
 }
@@ -331,7 +350,7 @@ text-shadow: var(--OmbreTxt);
     position: absolute;
     width:85%;
     height: 30%;  
-    top: 270%;
+    top: 225%;
     left: 7.5%;
     text-align: center;
 }
